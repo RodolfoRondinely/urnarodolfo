@@ -1,0 +1,127 @@
+ *{
+    margin: 0;padding: 0;box-sizing: border-box;
+ }
+ body{
+    background: #938f8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .container{
+    background: #dbd5c9;
+    padding: 30px;
+    display: flex;
+ }
+ .screen{
+    display: flex;
+    flex-direction:row;
+
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    margin-left: 30px;
+
+    transition: 2s ease-in-out;
+ }
+ .tela-numbers{
+    display: flex;
+}
+ .digitedNumber{
+
+    padding: 10px;
+    margin: 5px;
+    width: 40px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px gray;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+}
+.showCandidatos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+ }
+ .showNumbersDigited {
+   display: flex;
+   flex-direction: row;
+}
+.showDigitedNumber{
+   display: flex;
+}
+ .fotoCandidato{
+   display: flex;
+   flex-direction: column;
+   width: 280px;
+   height: 280px;
+   max-width: 300px;
+   max-height: 300px;
+   margin: 5px;
+   object-fit: contain;
+   background: rgba(222,222,333, .5);
+ }
+ .fotoCandidato img{
+    width: 280px;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    background: black;
+}
+ .teclado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #403a3a;
+    margin-left: 30px;
+ }
+ .teclas-line{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+ }
+
+ .teclas{
+    width: 60px;
+    margin: 10px;
+    padding: 10px;
+
+    background: rgb(4, 10, 4);
+    text-shadow: 2px 2px 2px rgb(20, 128, 121);
+    box-shadow:4px 2px 2px rgb(135, 120, 120);
+    color: wheat;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+ }
+ .button{
+    display: flex;
+ }
+ .button-escolha{
+    box-shadow:4px 2px 2px rgb(113, 109, 109);
+    background: red;
+    margin: 5px;
+    height: 30px;
+
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+ }
+ .white{
+    background: white;
+ }
+ .confirm{
+    background: green;
+ }
+ .behaviorTelacdo{
+    display: none;
+    position: absolute;
+    width:230px ;
+    height: 280px;
+    z-index: 2;
+    background: rgba(222,222,333, .1);
+    margin-top: -40px;
+ }
